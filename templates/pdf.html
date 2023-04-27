@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PDF Example by Object Tag</title>
+  </head>
+  <body>
+    <h1>{{ note.code }}</h1>
+    <div style="height: 100%">
+
+        <a target="_blank" href="{{ note.pdf.url }}">
+        <object data="{{ note.pdf.url }}" type="application/pdf" width="100%" height="1000px">
+            <p>Unable to display PDF file. <a href="{{ note.pdf.url }}">Download</a> instead.</p>
+          </object>
+        </a>
+        <!--
+        <embed
+        src="{{ note.pdf.url }}"
+        type="application/pdf"
+        frameBorder="1"
+        scrolling="auto"
+        height="100%"
+        width="100%"
+    ></embed>
+        -->
+    </div>
+    
+
+  </body>
+</html>
