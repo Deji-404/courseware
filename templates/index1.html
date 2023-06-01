@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <main class="body">
+        <nav>
+            <ul>
+                <li class="logo"><img  src="{% static 'logo.png' %}" alt=""></li>
+                <li class="menu"><img src="{% static 'menu.png' %}" alt=""></li>
+            </ul>
+        </nav>
+
+        <div>
+            <center>
+                <h1>Your one stop shop to all <br> course materials</h1>
+                <h6>Get acess to unlimited course resources ranging <br> from lecture notes, past-questions etc.</h6>
+                <input id="code" class="search" type="search" placeholder="Enter cource code">
+                <button class="button" onclick="go();">Search</button>
+            </center>
+        </div>
+        <img class="bottom" src="{% static 'bottom nav.png' %}" alt="">
+    </main>
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript'>
+        var myLink = document.querySelector('a[href="#"]');
+        myLink.addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+
+        var mySearch = document.getElementById('sear')
+
+        function go() {
+
+            var code = document.getElementById('code').value
+            var location = document.location.href
+            var url = location + 'course/' + code
+            console.log(url)
+            window.location.href = url
+
+        }
+       
+    </script>
+
+   
+</body>
+</html>

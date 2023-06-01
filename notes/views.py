@@ -6,7 +6,7 @@ from .models import LectureNote
 
 def home_page(request):
 
-    return render(request, 'index.html')
+    return render(request, 'index1.html')
 
 
 def pdf_page(request, code):
@@ -14,3 +14,10 @@ def pdf_page(request, code):
     note = get_object_or_404(LectureNote, code=code)
 
     return render(request, 'pdf.html', {'note': note})
+
+
+def course_page(request, code):
+
+    notes = LectureNote.objects.filter(code=code)
+
+    return render(request, 'pdfs.html', {'notes': notes})

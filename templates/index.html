@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html>
     <head>
         <meta charset='utf-8'>
@@ -82,7 +83,7 @@
         </style>
     </head>
     
-    <body className='snippet-body'>
+    <body className='snippet-body'  style="background: url('{% static 'hero-bg.jpg' %}')">
         <div class="container">
 
             <div class="row height d-flex justify-content-center align-items-center">
@@ -90,9 +91,12 @@
               <div class="col-md-6">
 
                 <div class="form">
-                  <i class="fa fa-search" onclick=go()></i>
+                  
                   <input type="text" id="code" class="form-control form-input" placeholder="Search course code...">
-                  <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                  <i class="fa fa-search" onclick=go()></i> 
+
+                  <span class="left-pan">
+                    </span>
                 </div>
                 
               </div>
