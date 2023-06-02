@@ -91,11 +91,12 @@
         </div>
         <div class="col-md-6">
           <a target="_blank" href="{{ note.pdf.url }}">
-            <object data="{{ note.pdf.url }}" type="application/pdf" width="100%" height="1000px">
+            <object data="{{ note.pdf.url }}" type="application/pdf" width="100%" height="700px">
                 <p>Unable to display PDF file. <a href="{{ note.pdf.url }}">Download</a> instead.</p>
               </object>
           </a>
-          <div class="" style="border: 1px solid #000; background-color: #fff; width: 100%; height: 500px; margin-top: 15%">
+          <!--
+          <div class="" style="border: 1px solid #000; background-color: #fff; width: 100%; height: 60%; margin-top: 15%">
           <iframe
               src="{{ note.pdf.url }}"
               type="application/pdf"
@@ -105,6 +106,7 @@
               width="100%"
           ></iframe>
           </div>
+        -->
         </div>
         
       </div>
