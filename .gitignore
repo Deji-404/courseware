@@ -1,5 +1,7 @@
 /db.sqlite3
 /venv
+/media
+/lecture_notes
 *.env
 *.env.example
 *.env.local
