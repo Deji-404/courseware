@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'coursepage.css' %}">
+<body>
+    <main class="body">
+        <nav>
+                <div class="logo">
+
+                    <img class="funlogo" src="logo.png" alt="">
+
+                        <h1>Course resources</h1>
+
+                        <div class="coursebox">
+
+                            {% for note in notes %}
+
+                            <div class="box1">
+
+                                <div class="card1">
+                                    <div>{{ note.name }}</div>
+
+                                    <div class="code">{{ note.code }}</div>
+
+                                    <div class="code">Ordinary Differential Equation</div>
+                                    
+                                    <a href="{% url 'pdf' note.code %}"><button>view</button></a>
+
+                                </div>
+
+                            </div>
+
+                            {% endfor %}
+                            <!--
+                            <div class="box2">
+                                <div class="card1">
+                                    <div>Past questions</div>
+
+                                    <div class="code">MTS 232</div>
+
+                                    <div class="code">Ordinary Differential Equation</div>
+                                    
+                                    <a href="#"><button>view</button></a>
+
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    
+                    </div>
+        </nav>
+
+
+
+        
+
+
+        <img class="bottom" src="bottomnav.png" alt="">
+    </main>
+</body>
+</html>

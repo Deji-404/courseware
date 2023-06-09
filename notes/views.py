@@ -13,11 +13,11 @@ def pdf_page(request, code):
 
     note = get_object_or_404(LectureNote, code=code)
 
-    return render(request, 'pdf.html', {'note': note})
+    return render(request, 'pdfpage.html', {'note': note})
 
 
 def course_page(request, code):
 
     notes = LectureNote.objects.filter(code=code)
 
-    return render(request, 'pdfs.html', {'notes': notes})
+    return render(request, 'coursepage.html', {'notes': notes})

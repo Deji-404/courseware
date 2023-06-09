@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.body{
+    overflow-x: hidden;
+    width: 100%;
+    background: linear-gradient(rgba(3, 56, 2, 0.667),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(background.png);  
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(215, 212, 212);
+    font-weight: lighter;
+}
+
+
+
+.logo{
+    padding: 2.5%;
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+.bottom{
+    width: 100%;
+    position: relative;
+    top: 9vh;    
+}
+
+
+
+ h1{
+    padding: 1%;
+    margin-left: 6%;
+    font-family:  Arial, sans-serif;  
+    font-size: 3.3vw;
+}
+
+.coursebox{
+    padding: 0%;
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1:hover{
+    background-color: rgba(2, 23, 2, 0.952);
+    transition: 0.5s ease-out;
+}
+
+
+.box2:hover{
+    background-color: rgba(2, 23, 2, 0.952);
+    transition: 0.5s ease-out;
+}
+
+
+.box1{
+    border-radius: 15px;
+    width: 25%;
+    height: 45vh;
+    background-color: rgba(4, 35, 4, 0.952);
+}
+.card1{
+    padding: 19%;
+}
+
+.code{
+    margin-top: 19%;
+}
+
+.box2{
+    border-radius: 15px;
+    width: 25%;
+    height: 45vh;
+
+    background-color: rgba(4, 35, 4, 0.952);
+}
+
+
+button{
+    margin-top: 16%;
+    padding: 3.2% 9.6% 3.2% 9.6%;
+    border: solid white 1px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(4, 35, 4, 0.952) ;
+    position: relative;
+    left: 75%;
+
+}
+button:hover{
+    color: rgba(2, 23, 2, 0.952);
+    background-color: white;
+    transition: 0.5s ease-out;
+
+}
+
+
+
+
+
+
+@media screen and (max-width : 600px) {
+    .menu{
+        margin-top: 5%;
+        padding: 1%;
+        width: 20%;
+
+    }
+
+    
+    .bottom{
+        width: 100%;
+        position: relative;
+        top: 10vh;    
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    h1{
+        padding: 5%;
+        font-size: 6vw;
+        
+    }
+
+    .coursebox{
+
+        padding: 1%;
+        margin-left: 6%;
+        width: 100%;
+        display: block;
+    }
+    
+    .box1{
+        height: 60vh;
+        width: 90%;
+    }
+
+    .card1{
+        padding: 12%;
+    }
+    
+    .box2{
+        height: 60vh;
+        margin-top: 10%;
+        width: 90%;
+    }
+
+    button{
+        padding: 2% 7% 2% 7%;
+        margin-top: 16%;
+        
+    }
+    
+    
+}
+    
+    

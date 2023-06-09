@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.body{
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(rgba(3, 56, 2, 0.667),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(background.png);  
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(215, 212, 212);
+    font-weight: lighter;
+}
+
+.logo{
+    padding: 2.5%;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.content{
+    padding: 5%;
+    display: flex;
+    width: 100%;
+}
+
+.pdfname{
+    width: 50%;
+    position: relative;
+    top: 150px;
+}
+
+.pdffile{
+    bottom: 180px;
+    width: 50%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width : 600px) {
+    .content{
+        padding: 5%;
+        display: block;
+        width: 100%;
+    }
+
+    .pdfname{
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    
+    .pdffile{
+        margin-top: 5%;
+        bottom: 0px;
+        width: 100%;
+        top: 0%;
+
+    }
+
+
+}
