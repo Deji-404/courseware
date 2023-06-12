@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, HttpResponse
 from .models import LectureNote
 
 # Create your views here.
@@ -21,3 +21,8 @@ def course_page(request, code):
     notes = LectureNote.objects.filter(code=code)
 
     return render(request, 'coursepage.html', {'notes': notes})
+
+
+def ads_view(request):
+    line = 'google.com, pub-4547480450563467, DIRECT, f08c47fec0942fa0'
+    return HttpResponse(line)
